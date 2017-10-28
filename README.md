@@ -1,10 +1,8 @@
 # BadgeUp WordPress Plugin
 
-## Requirements
+[![Plugin Screenshot](./badgeup/assets/screenshot-1.png)](https://www.badgeup.io))
 
-- PHP version 7.0.0 or greater
-- MySQL version 5.6 or greater
-- WordPress 4.4+
+[![Build Status](https://travis-ci.org/BadgeUp/badgeup-wordpress-plugin.svg?branch=master)](https://travis-ci.org/BadgeUp/badgeup-wordpress-plugin)
 
 ## Plugin Installation
 
@@ -22,6 +20,12 @@ Alternatively, when available on wordpress.org,
 2. Navigate to the Plugins menu and click `Add New`
 3. Search for 'BadgeUp'
 4. Click `Install now`
+
+## Requirements
+
+- PHP version 7.0.0 or greater
+- MySQL version 5.6 or greater
+- WordPress 4.4+
 
 ## Documentation
 
