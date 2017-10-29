@@ -8,19 +8,19 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://www.badgeup.io/
+ * @link              https://github.com/badgeup/badgeup-wordpress-plugin/
  * @since             1.0.0
  * @package           BadgeUp
  *
  * @wordpress-plugin
  * Plugin Name:       BadgeUp
- * Plugin URI:        https://www.badgeup.io/
+ * Plugin URI:        https://github.com/badgeup/badgeup-wordpress-plugin/
  * Description:       Easily add and manage achievements and badges.
  * Version:           1.0.0
  * Author:            BadgeUp
  * Author URI:        https://www.badgeup.io/
  * License:           MIT
- * License URI:       https://github.com/BadgeUp/badgeup-wordpress-plugin/LICENSE
+ * License URI:       https://github.com/BadgeUp/badgeup-wordpress-plugin/blob/master/LICENSE
  * Text Domain:       badgeup
  * Domain Path:       /languages
  */
