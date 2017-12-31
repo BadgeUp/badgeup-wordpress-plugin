@@ -4,6 +4,7 @@ Tags: achievements, badges, gamification, award, reward
 Requires at least: 4.8
 Requires PHP: 7.0
 License: MIT
+Stable Tag: {{STABLE_TAG}}
 
 Easily create and manage achievements and badges.
 

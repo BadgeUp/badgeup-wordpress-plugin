@@ -16,7 +16,7 @@
  * Plugin Name:       BadgeUp
  * Plugin URI:        https://github.com/badgeup/badgeup-wordpress-plugin/
  * Description:       Easily add and manage achievements and badges.
- * Version:           1.0.0
+ * Version:           {{CURRENT_VERSION}}
  * Author:            BadgeUp
  * Author URI:        https://www.badgeup.io/
  * License:           MIT
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'BadgeUp_VERSION', '1.0.0' );
+define( 'BadgeUp_VERSION', '{{CURRENT_VERSION}}' );
 define( 'BadgeUp_URL', plugin_dir_url( __FILE__ ) );
 
 if ( version_compare( '7', phpversion(), '>' ) ) {

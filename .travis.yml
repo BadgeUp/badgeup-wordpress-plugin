@@ -56,3 +56,9 @@ script:
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
       phpcs
     fi
+
+deploy:
+  provider: script
+  script: deploy.sh
+  on:
+    branch: master
