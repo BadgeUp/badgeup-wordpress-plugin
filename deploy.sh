@@ -49,11 +49,13 @@ cd $SVNPATH/trunk/
 svn status | grep -v "^.[ \t]*\..*" | grep "^?" | awk '{print $2}' | xargs svn add
 svn commit --username="$SVN_USER" --password="$SVN_PASSWORD" -m "release $LATEST_TAG"
 
-echo "Creating new SVN tag & committing it"
-cd $SVNPATH
-svn copy trunk/ tags/$LATEST_TAG/
-cd $SVNPATH/tags/$LATEST_TAG
-svn commit --username="$SVN_USER" --password="$SVN_PASSWORD" -m "tagging version $LATEST_TAG"
+if [ ! -d "$SVNPATH/tags/$LATEST_TAG" ]; then
+	echo "Creating new SVN tag & committing it"
+	cd $SVNPATH
+	svn copy trunk/ tags/$LATEST_TAG/
+	cd $SVNPATH/tags/$LATEST_TAG
+	svn commit --username="$SVN_USER" --password="$SVN_PASSWORD" -m "tagging version $LATEST_TAG"
+fi
 
 echo "Removing $SVNPATH..."
 rm -rf $SVNPATH/
