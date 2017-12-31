@@ -25,9 +25,6 @@ SVNURL="https://plugins.svn.wordpress.org/$PLUGINSLUG"
 echo "Creating local copy of SVN repo ..."
 svn co $SVNURL $SVNPATH
 
-echo "Exporting the HEAD of master from git to the trunk of SVN"
-cp -rf ./badgeup/ $SVNPATH/trunk/
-
 echo "Ignoring git files and deployment script"
 svn propset svn:ignore "deploy.sh
 README.md
@@ -42,6 +39,9 @@ sed -i '' "s/{{STABLE_TAG}}/$LATEST_TAG/g" "./$PLUGINSLUG/readme.txt"
 
 # Write the current version to badgeup.php
 sed -i '' "s/{{CURRENT_VERSION}}/$LATEST_TAG/g" "./$PLUGINSLUG/$MAINFILE"
+
+echo "Copying from git repo to SVN"
+cp -rf ./badgeup/ $SVNPATH/trunk/
 
 echo "Changing directory to SVN and committing to trunk"
 cd $SVNPATH/trunk/
