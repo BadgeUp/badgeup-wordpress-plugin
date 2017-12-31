@@ -13,6 +13,7 @@ Easily create and manage achievements and badges.
 Easily create and manage achievements and badges. Use the BadgeUp dashboard to gain insights into how your users are interacting with your site.
 
 Features:
+
 * earned achievements widget to display badges
 * manage achievements via the BadgeUp dashboard
 
@@ -31,6 +32,7 @@ The BadgeUp plugin collects events based on user interactions on your site. You 
 BadgeUp is a software-as-a-service (SaaS) company that offers an easy way to integrate achievements into your game or application. We offer advanced analytics and insights about your users to help you keep them engaged.
 
 == Installation ==
+
 1. Signup for an account at [badgeup.io](https://www.badgeup.io/) and login to the dashboard
 2. Select the WordPress icon
 3. Copy the API key
