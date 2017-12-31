@@ -75,7 +75,7 @@ class BadgeUpWordPressPluginTests extends WP_UnitTestCase {
 			echo 'Testing if API responded with 401, which means request went through successfully, ';
 			echo 'but key didn\'t have permissions to access the resource';
 
-			$this->assertTrue( '401' == $e->getCode() );
+			$this->assertEquals( '401', $e->getCode() );
 
 		}
 
@@ -106,7 +106,7 @@ class BadgeUpWordPressPluginTests extends WP_UnitTestCase {
 			echo 'Testing if API responded with 401, which means request went through successfully, ';
 			echo 'but key didn\'t have permissions to access the resource';
 
-			$this->assertTrue( '401' == $response->getCode() );
+			$this->assertEquals( '401', $response->getCode() );
 
 		} else {
 
