@@ -1,6 +1,6 @@
 # BadgeUp WordPress Plugin
 
-[![Plugin Screenshot](./badgeup/assets/screenshot-1.png)](https://www.badgeup.io))
+[![Plugin Screenshot](./assets/screenshot-1.png)](https://www.badgeup.io))
 
 [![Build Status](https://travis-ci.org/BadgeUp/badgeup-wordpress-plugin.svg?branch=master)](https://travis-ci.org/BadgeUp/badgeup-wordpress-plugin)
 
