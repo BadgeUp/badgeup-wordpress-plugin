@@ -78,7 +78,7 @@ class BadgeUpWordPressPluginTests extends WP_UnitTestCase {
 			if ( $e->getCode() ) {
 				$this->assertEquals( '401', $e->getCode() );
 			} else {
-				$this->assertEquals( 0, $response->getCode() );
+				$this->assertEquals( 0, $e->getCode() );
 				echo "Oops, couldn't make a request...";
 			}
 
